@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<settings>
+	<category label="[COLOR red]General[/COLOR]">
+		<setting visible="true" id="server_enable" 	type="bool" label="[COLOR red]Enable Server[/COLOR]: " default="false" />
+		<setting visible="false" id="password" 			type="text" label="Password: " default="xbmchub" option="hidden" />
+		<setting visible="true" id="address" 				type="text" label="[COLOR green]Address[/COLOR]: *(Advanced Users)" default=""  />
+		<setting visible="true" id="port" 					type="number" label="[COLOR purple]Port Number[/COLOR]: " default="2121" />
+		<setting visible="true" id="max-connections" 				type="number" label="Max Connections: " default="5" />
+		<setting visible="true" id="max-connections-per-ip" type="number" label="Max Connections / IP: " default="5" />
+		<setting visible="true" id="timeout" 				type="number" label="[COLOR maroon]Server Time-out[/COLOR]: *(Advanced Users) " default="10" />
+		<setting visible="false" id="is-serivce-running" 		type="bool" label="" default="false" />
+		<setting visible="true" id="auto-view" 			type="bool"   label="Enable Automatic View" default="true"/>
+		<setting visible="true" id="default-view" 	type="number" label="Default View" default="500" enable="!eq(-1,false)"/>
+		<setting visible="true" id="auto-back" 			type="bool"   label="Automatic Return to the main menu after Enable/Disable." default="true"/>
+		
+	</category>
+	<category label="[COLOR blue]Accounts[/COLOR]">
+		<setting visible="true" id="anon-enable" type="bool" label="Enable: Anonymous (read-only)" default="true" />
+		<setting visible="true" id="anon-path" type="folder" label="Folder: " enable="!eq(-1,false)" default="special://logpath" />
+		
+		<setting visible="true" id="01-enable" type="bool" label="[COLOR blue]Enable[/COLOR]: Account" default="true" />
+		<setting visible="true" id="01-user" type="text"   enable="!eq(-1,false)" label="[COLOR blue]User[/COLOR]: " default="addons"  />
+		<setting visible="true" id="01-pass" type="text"   enable="!eq(-2,false)" label="[COLOR blue]Password[/COLOR]: " default="xbmchub" option="hidden" />
+		<setting visible="true" id="01-path" type="folder" enable="!eq(-3,false)" label="[COLOR blue]Folder[/COLOR]: " default="special://home/addons" />
+		<setting visible="true" id="01-perm" type="text"   enable="!eq(-4,false)" label="[COLOR blue]Permissions[/COLOR]: " default="elradfmwM"  />
+		
+		<setting visible="true" id="02-enable" type="bool" label="[COLOR green]Enable[/COLOR]: Account" default="true" />
+		<setting visible="true" id="02-user" type="text"   enable="!eq(-1,false)" label="[COLOR green]User[/COLOR]: " default="home"  />
+		<setting visible="true" id="02-pass" type="text"   enable="!eq(-2,false)" label="[COLOR green]Password[/COLOR]: " default="xbmchub" option="hidden" />
+		<setting visible="true" id="02-path" type="folder" enable="!eq(-3,false)" label="[COLOR green]Folder[/COLOR]: " default="special://home" />
+		<setting visible="true" id="02-perm" type="text"   enable="!eq(-4,false)" label="[COLOR green]Permissions[/COLOR]: " default="elradfmwM"  />
+		
+		<setting visible="true" id="03-enable" type="bool" label="[COLOR red]Enable[/COLOR]: Account" default="false" />
+		<setting visible="true" id="03-user" type="text"   enable="!eq(-1,false)" label="[COLOR red]User[/COLOR]: " default="xbmc"  />
+		<setting visible="true" id="03-pass" type="text"   enable="!eq(-2,false)" label="[COLOR red]Password[/COLOR]: " default="xbmchub" option="hidden" />
+		<setting visible="true" id="03-path" type="folder" enable="!eq(-3,false)" label="[COLOR red]Folder[/COLOR]: " default="special://xbmc" />
+		<setting visible="true" id="03-perm" type="text"   enable="!eq(-4,false)" label="[COLOR red]Permissions[/COLOR]: " default="elradfmwM"  />
+		
+		<setting visible="true" id="04-enable" type="bool" label="[COLOR brown]Enable[/COLOR]: Account" default="false" />
+		<setting visible="true" id="04-user" type="text"   enable="!eq(-1,false)" label="[COLOR brown]User[/COLOR]: " default="temp"  />
+		<setting visible="true" id="04-pass" type="text"   enable="!eq(-2,false)" label="[COLOR brown]Password[/COLOR]: " default="xbmchub" option="hidden" />
+		<setting visible="true" id="04-path" type="folder" enable="!eq(-3,false)" label="[COLOR brown]Folder[/COLOR]: " default="special://temp" />
+		<setting visible="true" id="04-perm" type="text"   enable="!eq(-4,false)" label="[COLOR brown]Permissions[/COLOR]: " default="elradfmwM"  />
+		
+		
+		<setting visible="true" id="05-enable" type="bool" label="[COLOR yellow]Enable[/COLOR]: Account" default="false" />
+		<setting visible="true" id="05-user" type="text"   enable="!eq(-1,false)" label="[COLOR yellow]User[/COLOR]: " default="masterprofile"  />
+		<setting visible="true" id="05-pass" type="text"   enable="!eq(-2,false)" label="[COLOR yellow]Password[/COLOR]: " default="xbmchub" option="hidden" />
+		<setting visible="true" id="05-path" type="folder" enable="!eq(-3,false)" label="[COLOR yellow]Folder[/COLOR]: " default="special://masterprofile" />
+		<setting visible="true" id="05-perm" type="text"   enable="!eq(-4,false)" label="[COLOR yellow]Permissions[/COLOR]: " default="elradfmwM"  />
+		
+		<setting visible="true" id="06-enable" type="bool" label="[COLOR orange]Enable[/COLOR]: Account" default="false" />
+		<setting visible="true" id="06-user" type="text"   enable="!eq(-1,false)" label="[COLOR orange]User[/COLOR]: " default="subtitles"  />
+		<setting visible="true" id="06-pass" type="text"   enable="!eq(-2,false)" label="[COLOR orange]Password[/COLOR]: " default="xbmchub" option="hidden" />
+		<setting visible="true" id="06-path" type="folder" enable="!eq(-3,false)" label="[COLOR orange]Folder[/COLOR]: " default="special://subtitles" />
+		<setting visible="true" id="06-perm" type="text"   enable="!eq(-4,false)" label="[COLOR orange]Permissions[/COLOR]: " default="elradfmwM"  />
+		
+		<setting visible="true" id="07-enable" type="bool" label="[COLOR pink]Enable[/COLOR]: Account" default="false" />
+		<setting visible="true" id="07-user" type="text"   enable="!eq(-1,false)" label="[COLOR pink]User[/COLOR]: " default="recordings"  />
+		<setting visible="true" id="07-pass" type="text"   enable="!eq(-2,false)" label="[COLOR pink]Password[/COLOR]: " default="xbmchub" option="hidden" />
+		<setting visible="true" id="07-path" type="folder" enable="!eq(-3,false)" label="[COLOR pink]Folder[/COLOR]: " default="special://recordings" />
+		<setting visible="true" id="07-perm" type="text"   enable="!eq(-4,false)" label="[COLOR pink]Permissions[/COLOR]: " default="elradfmwM"  />
+		
+		<setting visible="true" id="08-enable" type="bool" label="[COLOR purple]Enable[/COLOR]: Account" default="false" />
+		<setting visible="true" id="08-user" type="text"   enable="!eq(-1,false)" label="[COLOR purple]User[/COLOR]: " default="screenshots"  />
+		<setting visible="true" id="08-pass" type="text"   enable="!eq(-2,false)" label="[COLOR purple]Password[/COLOR]: " default="xbmchub" option="hidden" />
+		<setting visible="true" id="08-path" type="folder" enable="!eq(-3,false)" label="[COLOR purple]Folder[/COLOR]: " default="special://screenshots" />
+		<setting visible="true" id="08-perm" type="text"   enable="!eq(-4,false)" label="[COLOR purple]Permissions[/COLOR]: " default="elradfmwM"  />
+		
+		<setting visible="true" id="09-enable" type="bool" label="[COLOR tan]Enable[/COLOR]: Account" default="false" />
+		<setting visible="true" id="09-user" type="text"   enable="!eq(-1,false)" label="[COLOR tan]User[/COLOR]: " default="thumbnails"  />
+		<setting visible="true" id="09-pass" type="text"   enable="!eq(-2,false)" label="[COLOR tan]Password[/COLOR]: " default="xbmchub" option="hidden" />
+		<setting visible="true" id="09-path" type="folder" enable="!eq(-3,false)" label="[COLOR tan]Folder[/COLOR]: " default="special://thumbnails" />
+		<setting visible="true" id="09-perm" type="text"   enable="!eq(-4,false)" label="[COLOR tan]Permissions[/COLOR]: " default="elradfmwM"  />
+		
+		<setting visible="true" id="10-enable" type="bool" label="[COLOR cyan]Enable[/COLOR]: Account" default="false" />
+		<setting visible="true" id="10-user" type="text"   enable="!eq(-1,false)" label="[COLOR cyan]User[/COLOR]: " default=""  />
+		<setting visible="true" id="10-pass" type="text"   enable="!eq(-2,false)" label="[COLOR cyan]Password[/COLOR]: " default="xbmchub" option="hidden" />
+		<setting visible="true" id="10-path" type="folder" enable="!eq(-3,false)" label="[COLOR cyan]Folder[/COLOR]: " default="" />
+		<setting visible="true" id="10-perm" type="text"   enable="!eq(-4,false)" label="[COLOR cyan]Permissions[/COLOR]: " default="elradfmwM"  />
+		
+	</category>
+	<category label="[COLOR purple]Menu[/COLOR]">
+		<setting visible="true" id="show-accounts" type="bool" label="Show [COLOR darkorange]Accounts[/COLOR]:" default="true" />
+		<setting visible="true" id="show-ftpurl" type="bool" label="Show [COLOR darkorange]FTP URL Examples[/COLOR]:" default="true" />
+		<setting visible="true" id="show-netsettings" type="bool" label="Show [COLOR darkorange]Network Settings Link[/COLOR]:" default="true" />
+		<setting visible="true" id="show-restartxbmc" type="bool" label="Show [COLOR purple]Restart XBMC Link[/COLOR]:" default="true" />
+		<setting visible="true" id="show-settings" type="bool" label="Show [COLOR darkorange]Settings[/COLOR]:" default="true" />
+		<setting visible="true" id="show-endisserver" type="bool" label="Show [COLOR darkorange]Enable/Disable Server[/COLOR]:" default="true" />
+		<setting visible="true" id="show-serverstatus" type="bool" label="Show [COLOR darkorange]Server Status[/COLOR]:" default="true" />
+		
+	</category>
+</settings>
